@@ -87,7 +87,10 @@ export default function CryptoPage() {
                     Change: {crypto.percentage_change}
                   </p>
                   <div className="mt-3">
-                    <Button className="bg-white text-black hover:bg-zinc-400">
+                    <Button 
+                      className="bg-white text-black hover:bg-zinc-400"
+                      onClick={() => window.location.href = 'https://crypto.com/'}
+                    >
                       Buy
                     </Button>
                   </div>
@@ -105,7 +108,7 @@ export default function CryptoPage() {
         </div>
         <div className="text-white bg-black p-2">
           {cryptoNews.map((crypto, index) => (
-          <li className="text-md font-sans text-slate-300" key={index}>
+          <li className="text-md hover:underline underline-offset-1 cursor-pointer font-sans text-slate-300" key={index}>
             {crypto.news}
           </li>))}
         </div>
