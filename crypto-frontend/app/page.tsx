@@ -1,10 +1,7 @@
 'use client';
-import Image from "next/image";
-import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
-
 
   function handleClick() {
     window.location.href = '/crypto';
