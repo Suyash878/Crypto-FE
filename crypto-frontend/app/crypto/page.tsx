@@ -1,10 +1,8 @@
 'use client';
 import { useEffect, useState } from "react";
-import {columns} from "../../components/ui/columns"
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react"
 import { ChevronLeft } from "lucide-react"
-
 
 export interface cryptoType {
   name: string;
